@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
 
 	List<Transaction> findByTransactionId(String transactionId);
+
+	List<Transaction> fetchByAccountId(int accountId);
 	
 
 }

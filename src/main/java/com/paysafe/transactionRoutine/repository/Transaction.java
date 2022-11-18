@@ -32,6 +32,7 @@ public class Transaction {
 	@JsonProperty("operation_type_id")
 	private int operationTypeId;
 	private BigDecimal amount;
+	private BigDecimal balance;
 	private Date eventDate;
 	
 
